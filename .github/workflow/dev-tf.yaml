@@ -9,3 +9,12 @@ name: 'Grocery App Infra - Dev'
 
 on:
   push:
+    branches:
+      - dev
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Initialize
+        run: echo "Initialize"
